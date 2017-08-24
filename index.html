@@ -1,0 +1,274 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Rooster hulp</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+      <script src="js/js.cookie.js"></script>
+  </head>
+  <body>
+<!-- find: (>)\n?\s*([\w\s]*)\s(<) -->
+<!-- replace: \1\2\3 -->
+<div class="page-header">
+    <h1>Rooster hulp <small> rooster vooruitzicht, klik je eerste werkdag van een week aan.</small></h1>
+    <div class="text-center">
+    <div class="btn-group" role="group">
+        <button type="button" id="lock" class="btn btn-default">Lock</button>
+        <button type="button" id="unlock" class="btn btn-default">Unlock</button>
+    </div>
+    </div>
+</div>
+
+<!-- START CONTAINER 2015 -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-3"><h4 class="text-center"><b>januari</b></h4><table id="calendar" class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tbody><tr><td class="hidden">overflow</td><td class="hidden">overflow</td><td class="hidden">overflow</td><td class="hidden">overflow</td><td class="hidden">overflow</td><td class="hidden">overflow</td><td class="hidden">overflow</td></tr><tr><td class="hidden">overflow</td><td class="hidden">overflow</td><td class="hidden">overflow</td><td class="hidden">overflow</td><td class="hidden">overflow</td><td class="hidden">overflow</td><td class="hidden">overflow</td></tr><tr><td class="hidden">overflow</td><td class="hidden">overflow</td><td class="hidden">overflow</td><td class="hidden">overflow</td><td class="hidden">overflow</td><td class="hidden">overflow</td><td class="hidden">overflow</td></tr><tr><td></td><td></td><td></td><td>1</td><td>2</td><td>3</td><td>4</td></tr><tr><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td></tr><tr><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td></tr><tr><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td></tr><tr><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td><td></td></tr></tbody></table></div>
+    <div class="col-md-3"><h4 class="text-center"><b>februari</b></h4><table class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tbody><tr><td></td><td></td><td></td><td></td><td></td><td></td><td>1</td></tr><tr><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td></tr><tr><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td></tr><tr><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td></tr><tr><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td></td></tr></tbody></table></div>
+    <div class="col-md-3"><h4 class="text-center"><b>maart</b></h4><table class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tbody><tr><td></td><td></td><td></td><td></td><td></td><td></td><td>1</td></tr><tr><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td></tr><tr><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td></tr><tr><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td></tr><tr><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td></tr><tr><td>30</td><td>31</td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table></div>
+    <div class="col-md-3"><h4 class="text-center"><b>april</b></h4><table class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tbody><tr><td></td><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr><tr><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td></tr><tr><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td></tr><tr><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td></tr><tr><td>27</td><td>28</td><td>29</td><td>30</td><td></td><td></td><td></td></tr></tbody></table></div>
+      <div class="clearfix"></div>
+    <div class="col-md-3"><h4 class="text-center"><b>mei</b></h4><table class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tbody><tr><td></td><td></td><td></td><td></td><td>1</td><td>2</td><td>3</td></tr><tr><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr><tr><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td></tr><tr><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td></tr><tr><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td></tr></tbody></table></div>
+    <div class="col-md-3"><h4 class="text-center"><b>juni</b></h4><table class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tbody><tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr><tr><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr><tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr><tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr><tr><td>29</td><td>30</td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table></div>
+    <div class="col-md-3"><h4 class="text-center"><b>juli</b></h4><table class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tbody><tr><td></td><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr><tr><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td></tr><tr><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td></tr><tr><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td></tr><tr><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td><td></td><td></td></tr></tbody></table></div>
+    <div class="col-md-3"><h4 class="text-center"><b>augustus</b></h4><table class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tbody><tr><td></td><td></td><td></td><td></td><td></td><td>1</td><td>2</td></tr><tr><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td></tr><tr><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td></tr><tr><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td></tr><tr><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td></tr><tr><td>31</td><td></td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table></div>
+      <div class="clearfix"></div>
+    <div class="col-md-3"><h4 class="text-center"><b>september</b></h4><table class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tbody><tr><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr><tr><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td></tr><tr><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td></tr><tr><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td></tr><tr><td>28</td><td>29</td><td>30</td><td></td><td></td><td></td><td></td></tr></tbody></table></div>
+    <div class="col-md-3"><h4 class="text-center"><b>oktober</b></h4><table class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tbody><tr><td></td><td></td><td></td><td>1</td><td>2</td><td>3</td><td>4</td></tr><tr><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td></tr><tr><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td></tr><tr><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td></tr><tr><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td><td></td></tr></tbody></table></div>
+    <div class="col-md-3"><h4 class="text-center"><b>november</b></h4><table class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tbody><tr><td></td><td></td><td></td><td></td><td></td><td></td><td>1</td></tr><tr><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td></tr><tr><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td></tr><tr><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td></tr><tr><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td></tr><tr><td>30</td><td></td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table></div>
+    <div class="col-md-3"><h4 class="text-center"><b>december</b></h4><table class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tbody><tr><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr><tr><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td></tr><tr><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td></tr><tr><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td></tr><tr><td>28</td><td>29</td><td>30</td><td>31</td><td></td><td></td><td></td></tr></tbody></table></div>
+      <div class="clearfix"></div>
+  </div>
+  <div class="row">
+      <div class="col-md-6"></div>
+      <div class="col-md-6"></div>
+  </div>
+</div>
+<!-- END CONTAINER 2015 -->
+
+<div class="page-header text-center">
+    <h1>2016</h1>
+</div>
+<!-- START 2016 -->
+<div class="container">
+  <div class="row">
+    <div id="1-2016" class="col-md-3"><h4 class="text-center"><b>januari 2016</b></h4><table class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tr><td colspan="4"></td><td>1</td><td>2</td><td>3</td></tr><tr><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr><tr><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td></tr><tr><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td></tr><tr><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td></tr><tr><td colspan="7"></td></tr></table></div>
+    <div id="2-2016" class="col-md-3"><h4 class="text-center"><b>februari 2016</b></h4><table class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr><tr><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr><tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr><tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr><tr><td>29</td><td colspan="6"></td></tr></table></div>
+    <div id="3-2016" class="col-md-3"><h4 class="text-center"><b>maart 2016</b></h4><table class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tr><td colspan="1"></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr><tr><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td></tr><tr><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td></tr><tr><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td></tr><tr><td>28</td><td>29</td><td>30</td><td>31</td><td colspan="3"></td></tr></table></div>
+    <div id="4-2016" class="col-md-3"><h4 class="text-center"><b>april 2016</b></h4><table class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tr><td colspan="4"></td><td>1</td><td>2</td><td>3</td></tr><tr><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr><tr><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td></tr><tr><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td></tr><tr><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td colspan="1"></td></tr></table></div>
+      <div class="clearfix"></div>
+    <div id="5-2016" class="col-md-3"><h4 class="text-center"><b>mei 2016</b></h4><table class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tr><td colspan="6"></td><td>1</td></tr><tr><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td></tr><tr><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td></tr><tr><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td></tr><tr><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td></tr><tr><td>30</td><td>31</td><td colspan="5"></td></tr></table></div>
+    <div id="6-2016" class="col-md-3"><h4 class="text-center"><b>juni 2016</b></h4><table class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tr><td colspan="2"></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr><tr><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td></tr><tr><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td></tr><tr><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td></tr><tr><td>27</td><td>28</td><td>29</td><td>30</td><td colspan="3"></td></tr></table></div>
+    <div id="7-2016" class="col-md-3"><h4 class="text-center"><b>juli 2016</b></h4><table class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tr><td colspan="4"></td><td>1</td><td>2</td><td>3</td></tr><tr><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr><tr><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td></tr><tr><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td></tr><tr><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td></tr></table></div>
+    <div id="8-2016" class="col-md-3"><h4 class="text-center"><b>augustus 2016</b></h4><table class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr><tr><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr><tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr><tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr><tr><td>29</td><td>30</td><td>31</td><td colspan="4"></td></tr></table></div>
+      <div class="clearfix"></div>
+    <div id="9-2016" class="col-md-3"><h4 class="text-center"><b>september 2016</b></h4><table class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tr><td colspan="3"></td><td>1</td><td>2</td><td>3</td><td>4</td></tr><tr><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td></tr><tr><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td></tr><tr><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td></tr><tr><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td colspan="2"></td></tr></table></div>
+    <div id="10-2016" class="col-md-3"><h4 class="text-center"><b>oktober 2016</b></h4><table class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tr><td colspan="5"></td><td>1</td><td>2</td></tr><tr><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td></tr><tr><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td></tr><tr><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td></tr><tr><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td></tr><tr><td>31</td><td colspan="6"></td></tr></table></div>
+    <div id="11-2016" class="col-md-3"><h4 class="text-center"><b>november 2016</b></h4><table class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tr><td colspan="1"></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr><tr><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td></tr><tr><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td></tr><tr><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td></tr><tr><td>28</td><td>29</td><td>30</td><td colspan="4"></td></tr></table></div>
+    <div id="12-2016" class="col-md-3"><h4 class="text-center"><b>december 2016</b></h4><table class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tr><td colspan="3"></td><td>1</td><td>2</td><td>3</td><td>4</td></tr><tr><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td></tr><tr><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td></tr><tr><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td></tr><tr><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td><td colspan="1"></td></tr></table></div>
+      <div class="clearfix"></div>
+  </div>
+  <div class="row">
+      <div class="col-md-6"></div>
+      <div class="col-md-6"></div>
+  </div>
+</div>
+<!-- END CONTAINER 2016 -->
+
+<div class="page-header text-center">
+    <h1>2017</h1>
+</div>
+<!-- START CONTAINER 2017 -->
+<div class="container">
+  <div class="row">
+    <div id="1-2017" class="col-md-3"><h4 class="text-center"><b>januari 2017</b></h4><table class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tr><td></td><td></td><td></td><td></td><td></td><td></td><td>1</td></tr><tr><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td></tr><tr><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td></tr><tr><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td></tr><tr><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td></tr><tr><td>30</td><td>31</td><td></td><td></td><td></td><td></td><td></td></tr></table></div>
+    <div id="2-2017" class="col-md-3"><h4 class="text-center"><b>februari 2017</b></h4><table class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tr><td></td><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr><tr><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td></tr><tr><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td></tr><tr><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td></tr><tr><td>27</td><td>28</td><td></td><td></td><td></td><td></td><td></td></tr></table></div>
+    <div id="3-2017" class="col-md-3"><h4 class="text-center"><b>maart 2017</b></h4><table class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tr><td></td><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr><tr><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td></tr><tr><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td></tr><tr><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td></tr><tr><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td><td></td><td></td></tr></table></div>
+    <div id="4-2017" class="col-md-3"><h4 class="text-center"><b>april 2017</b></h4><table class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tr><td></td><td></td><td></td><td></td><td></td><td>1</td><td>2</td></tr><tr><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td></tr><tr><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td></tr><tr><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td></tr><tr><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td></tr></table></div>
+      <div class="clearfix"></div>
+    <div id="5-2017" class="col-md-3"><h4 class="text-center"><b>mei 2017</b></h4><table class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr><tr><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr><tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr><tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr><tr><td>29</td><td>30</td><td>31</td><td></td><td></td><td></td><td></td></tr></table></div>
+    <div id="6-2017" class="col-md-3"><h4 class="text-center"><b>juni 2017</b></h4><table class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tr><td></td><td></td><td></td><td>1</td><td>2</td><td>3</td><td>4</td></tr><tr><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td></tr><tr><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td></tr><tr><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td></tr><tr><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td></td><td></td></tr></table></div>
+    <div id="7-2017" class="col-md-3"><h4 class="text-center"><b>juli 2017</b></h4><table class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tr><td></td><td></td><td></td><td></td><td></td><td>1</td><td>2</td></tr><tr><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td></tr><tr><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td></tr><tr><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td></tr><tr><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td></tr><tr><td>31</td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table></div>
+    <div id="8-2017" class="col-md-3"><h4 class="text-center"><b>augustus 2017</b></h4><table class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tr><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr><tr><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td></tr><tr><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td></tr><tr><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td></tr><tr><td>28</td><td>29</td><td>30</td><td>31</td><td></td><td></td><td></td></tr></table></div>
+      <div class="clearfix"></div>
+    <div id="9-2017" class="col-md-3"><h4 class="text-center"><b>september 2017</b></h4><table class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tr><td></td><td></td><td></td><td></td><td>1</td><td>2</td><td>3</td></tr><tr><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr><tr><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td></tr><tr><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td></tr><tr><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td></td></tr></table></div>
+    <div id="10-2017" class="col-md-3"><h4 class="text-center"><b>oktober 2017</b></h4><table class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tr><td></td><td></td><td></td><td></td><td></td><td></td><td>1</td></tr><tr><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td></tr><tr><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td></tr><tr><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td></tr><tr><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td></tr><tr><td>30</td><td>31</td><td></td><td></td><td></td><td></td><td></td></tr></table></div>
+    <div id="11-2017" class="col-md-3"><h4 class="text-center"><b>november 2017</b></h4><table class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tr><td></td><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr><tr><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td></tr><tr><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td></tr><tr><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td></tr><tr><td>27</td><td>28</td><td>29</td><td>30</td><td></td><td></td><td></td></tr></table></div>
+    <div id="12-2017" class="col-md-3"><h4 class="text-center"><b>december 2017</b></h4><table class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tr><td></td><td></td><td></td><td></td><td>1</td><td>2</td><td>3</td></tr><tr><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr><tr><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td></tr><tr><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td></tr><tr><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td></tr></table></div>
+      <div class="clearfix"></div>
+    <div class="row">
+      <div class="col-md-6"></div>
+      <div class="col-md-6"></div>
+    </div>
+  </div>
+</div>
+<!-- END CONTAINER 2017 -->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+var days = $("td:not(:empty)");
+
+// Store
+
+// Retrieve
+
+
+/*$(document).on('ready', function() {
+    var dayofYear = Cookies.get('roosterClick'); // Retriev cookie where user last clicked
+    while (dayofYear >= 10) { 
+            var dayofYear = dayofYear-10;
+            workDays(dayofYear);
+    }
+    while (dayofYear <= 5000) {
+        workDays(dayofYear);
+        var dayofYear = dayofYear+10;
+    }
+});*/
+
+var d = new Date();
+
+var month = d.getMonth()+1;
+var day = d.getDate();
+
+var output = d.getFullYear() + '/' +
+    ((''+month).length<2 ? '0' : '') + month + '/' +
+    ((''+day).length<2 ? '0' : '') + day;
+
+$(document).on('ready', function() {
+
+    var dayofYear = localStorage.getItem("roosterKlik"); // get last clicked day
+    //console.log(dayofYear);
+    if (dayofYear !== null) {
+      while (dayofYear >= 10) { 
+              var dayofYear = dayofYear-10;
+              workDays(dayofYear);
+      }
+      while (dayofYear <= 5000) {
+          workDays(dayofYear);
+          var dayofYear = dayofYear+10;
+      }
+      $('#lock').addClass('active')
+    }
+
+    // Jumps to current Month of the year
+    var currentMonth = '#' + month + '-' + d.getFullYear()
+
+    $('html, body').animate({
+        scrollTop: $(currentMonth).offset().top
+    }, 200);
+});
+
+function workDays(dayofYear) {
+    days.eq(dayofYear).addClass("ochtend").attr({"title": "Ochtenddienst"});
+    days.eq(dayofYear+1).addClass("ochtend").attr({"title": "Ochtenddienst"});
+    days.eq(dayofYear+2).addClass("avond").attr({"title": "Avonddienst"});
+    days.eq(dayofYear+3).addClass("avond").attr({"title": "Avonddienst"});
+    days.eq(dayofYear+4).addClass("nacht").attr({"title": "Nachtdienst"});
+    days.eq(dayofYear+5).addClass("nacht").attr({"title": "Nachtdienst"});
+    days.eq(dayofYear+6).removeClass;
+    days.eq(dayofYear+7).removeClass;
+    days.eq(dayofYear+8).removeClass;
+    days.eq(dayofYear+9).removeClass;
+}
+
+days.on('click.rooster', function() {
+var dayofYear = days.index($(this));
+var realDay = dayofYear-20; //console.log("dayofYear <td> is: "+ realDay);
+/*Cookies.set('roosterClick', realDay); // Set cookie for the date clicked*/
+localStorage.setItem("roosterKlik", realDay);
+    days.not(".feestdag").not(".hidden").removeClass();
+    while (dayofYear >= 10) { 
+            var dayofYear = dayofYear-10;
+            workDays(dayofYear);
+    }
+    while (dayofYear <= 5000) {
+        workDays(dayofYear);
+        var dayofYear = dayofYear+10;
+    }
+});
+
+// Feestdagen
+days.each(function() {
+    var dag = days.index($(this));
+    var overflow = +20;
+    if (dag == 1+overflow) { // Nieuwjaarsdag 2015
+        $(this).addClass("feestdag").attr({"data-toggle": "tooltip", "data-container": "body", "title": "Nieuwjaarsdag"});
+    } else if (dag == 93+overflow) { // Goede vrijdag 2015
+        $(this).addClass("feestdag").attr({"data-toggle": "tooltip", "data-container": "body", "title": "Goede vrijdag"});
+    } else if (dag == 95+overflow || dag == 96+overflow) { // 1e & 2e Paasdag 2015
+        $(this).addClass("feestdag").attr({"data-toggle": "tooltip", "data-container": "body", "title": "Pasen"});
+    } else if (dag == 117+overflow) { // Koningsdag 2015
+        $(this).addClass("feestdag").attr({"data-toggle": "tooltip", "data-container": "body", "title": "Koningsdag"});
+    } else if (dag == 125+overflow) { // Bevrijdingsdag 2015
+        $(this).addClass("feestdag").attr({"data-toggle": "tooltip", "data-container": "body", "title": "Bevrijdingsdag"});
+    } else if (dag == 134+overflow) { // Hemelvaartsdag 2015
+        $(this).addClass("feestdag").attr({"data-toggle": "tooltip", "data-container": "body", "title": "Hemelvaartsdag"});
+    } else if (dag == 144+overflow || dag == 145+overflow) { // 1e & 2e Pinksterdag 2015
+        $(this).addClass("feestdag").attr({"data-toggle": "tooltip", "data-container": "body", "title": "Pinksteren"});
+    } else if (dag == 359+overflow || dag == 360+overflow) { // 1e & 2e Kerstdag 2015
+        $(this).addClass("feestdag").attr({"data-toggle": "tooltip", "data-container": "body", "title": "Kerst"});
+    } else if (dag == 365+overflow) { // Oudjaarsdag 2015
+        $(this).addClass("feestdag").attr({"data-toggle": "tooltip", "data-container": "body", "title": "Oudjaarsdag"});
+    } else if (dag == 366+overflow) { // Nieuwjaarsdag 2015
+        $(this).addClass("feestdag").attr({"data-toggle": "tooltip", "data-container": "body", "title": "Nieuwjaarsdag"});
+    } else if (dag == 450+overflow) { // Goede vrijdag 2015
+        $(this).addClass("feestdag").attr({"data-toggle": "tooltip", "data-container": "body", "title": "Goede vrijdag"});
+    } else if (dag == 452+overflow || dag == 453+overflow) { // 1e & 2e Paasdag 2015
+        $(this).addClass("feestdag").attr({"data-toggle": "tooltip", "data-container": "body", "title": "Pasen"});
+    } else if (dag == 483+overflow) { // Koningsdag 2015
+        $(this).addClass("feestdag").attr({"data-toggle": "tooltip", "data-container": "body", "title": "Koningsdag"});
+    } else if (dag == 491+overflow) { // Bevrijdingsdag 2015 & Hemelvaartsdag 2015
+        $(this).addClass("feestdag").attr({"data-toggle": "tooltip", "data-container": "body", "title": "Bevrijdingsdag & Hemelvaartsdag"});
+    } else if (dag == 501+overflow || dag == 502+overflow) { // 1e & 2e Pinksterdag 2015
+        $(this).addClass("feestdag").attr({"data-toggle": "tooltip", "data-container": "body", "title": "Pinksteren"});
+    } else if (dag == 725+overflow || dag == 726+overflow) { // 1e & 2e Kerstdag 2015
+        $(this).addClass("feestdag").attr({"data-toggle": "tooltip", "data-container": "body", "title": "Kerst"});
+    } else if (dag == 731+overflow) { // Oudjaarsdag 2015
+        $(this).addClass("feestdag").attr({"data-toggle": "tooltip", "data-container": "body", "title": "Oudjaarsdag"});
+    }
+});
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip({ delay: { hide: 200 }, placement: 'bottom' })
+})
+
+// Lock & Unlock roster creation
+$("#lock").click(function(){
+    days.off('click.rooster');
+    $(this).addClass('active');
+    $('#unlock').removeClass('active');
+});
+$("#unlock").click(function(){
+    $('#lock').removeClass('active');
+    days.on('click.rooster', function () {
+    var dayofYear = days.index($(this));
+    days.not(".feestdag").not(".hidden").removeClass();
+    while (dayofYear >= 10) { 
+            var dayofYear = dayofYear-10;
+            workDays(dayofYear);
+    }
+    while (dayofYear <= 5000) {
+        workDays(dayofYear);
+        var dayofYear = dayofYear+10;
+    }
+});
+});
+</script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

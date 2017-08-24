@@ -1,0 +1,115 @@
+html {
+	min-height: 100vh;
+	background: #242f7f; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMTlhMTAwIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzk4Y2IwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+	background: -moz-linear-gradient(-45deg,  #242f7f 0%, #009ad2 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#242f7f), color-stop(100%,#009ad2)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg,  #242f7f 0%,#009ad2 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg,  #242f7f 0%,#009ad2 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg,  #242f7f 0%,#009ad2 100%); /* IE10+ */
+	background: linear-gradient(135deg,  #242f7f 0%,#009ad2 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#242f7f', endColorstr='#009ad2',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+	overflow: -moz-scrollbars-vertical; /* For FF */
+	-ms-overflow-y: scroll; /* For IE */
+	overflow-y: scroll; /* For others & old IE */
+}
+
+body {
+	margin-bottom: 100px;
+	margin-top: 0px;
+}
+
+.table tbody tr > td:hover {
+  background-color: #dff0d8 !important;
+} 
+
+.table > thead > tr > td.ochtend,
+.table > tbody > tr > td.ochtend,
+.table > tfoot > tr > td.ochtend,
+.table > thead > tr > th.ochtend,
+.table > tbody > tr > th.ochtend,
+.table > tfoot > tr > th.ochtend,
+.table > thead > tr.ochtend > td,
+.table > tbody > tr.ochtend > td,
+.table > tfoot > tr.ochtend > td,
+.table > thead > tr.ochtend > th,
+.table > tbody > tr.ochtend > th,
+.table > tfoot > tr.ochtend > th {
+  background-color: #d9edf7;
+}
+.table > tbody > tr > td.ochtend:hover {
+  background-color: #c4e3f3;
+}
+
+.table > thead > tr > td.avond,
+.table > tbody > tr > td.avond,
+.table > tfoot > tr > td.avond,
+.table > thead > tr > th.avond,
+.table > tbody > tr > th.avond,
+.table > tfoot > tr > th.avond,
+.table > thead > tr.avond > td,
+.table > tbody > tr.avond > td,
+.table > tfoot > tr.avond > td,
+.table > thead > tr.avond > th,
+.table > tbody > tr.avond > th,
+.table > tfoot > tr.avond > th {
+  background-color: #c4e3f3;
+}
+.table > tbody > tr > td.avond:hover {
+  background-color: #AAD8F0;
+}
+
+.table > thead > tr > td.nacht,
+.table > tbody > tr > td.nacht,
+.table > tfoot > tr > td.nacht,
+.table > thead > tr > th.nacht,
+.table > tbody > tr > th.nacht,
+.table > tfoot > tr > th.nacht,
+.table > thead > tr.nacht > td,
+.table > tbody > tr.nacht > td,
+.table > tfoot > tr.nacht > td,
+.table > thead > tr.nacht > th,
+.table > tbody > tr.nacht > th,
+.table > tfoot > tr.nacht > th {
+  background-color: #AAD8F0;
+}
+.table > tbody > tr > td.nacht:hover {
+  background-color: #8AC5E3;
+}
+
+.table > thead > tr > td.feestdag,
+.table > tbody > tr > td.feestdag,
+.table > tfoot > tr > td.feestdag,
+.table > thead > tr > th.feestdag,
+.table > tbody > tr > th.feestdag,
+.table > tfoot > tr > th.feestdag,
+.table > thead > tr.feestdag > td,
+.table > tbody > tr.feestdag > td,
+.table > tfoot > tr.feestdag > td,
+.table > thead > tr.feestdag > th,
+.table > tbody > tr.feestdag > th,
+.table > tfoot > tr.feestdag > th {
+  background-color: #faf2cc;
+}
+.table > tbody > tr > td.feestdag:hover {
+  background-color: #FAEDAF !important;
+}
+
+.table > thead > tr > td.test,
+.table > tbody > tr > td.test,
+.table > tfoot > tr > td.test,
+.table > thead > tr > th.test,
+.table > tbody > tr > th.test,
+.table > tfoot > tr > th.test,
+.table > thead > tr.test > td,
+.table > tbody > tr.test > td,
+.table > tfoot > tr.test > td,
+.table > thead > tr.test > th,
+.table > tbody > tr.test > th,
+.table > tfoot > tr.test > th {
+  background-color: red !important;
+}
+.table > tbody > tr > td.test:hover {
+  background-color: red !important;
+}
