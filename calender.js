@@ -1,8 +1,4 @@
 
-// Store
-
-// Retrieve
-
 
 /*$(document).on('ready', function() {
     var dayofYear = Cookies.get('roosterClick'); // Retriev cookie where user last clicked
@@ -26,18 +22,19 @@ var output = d.getFullYear() + '/' +
     ((''+month).length<2 ? '0' : '') + month + '/' +
     ((''+day).length<2 ? '0' : '') + day;
 
+
 $(document).on('ready', function() {
 
     var dayofYear = localStorage.getItem("roosterKlik"); // get last clicked day
     //console.log(dayofYear);
     if (dayofYear !== null) {
       while (dayofYear >= 10) { 
-              var dayofYear = dayofYear-10;
+              dayofYear = dayofYear-10;
               workDays(dayofYear);
       }
       while (dayofYear <= 5000) {
           workDays(dayofYear);
-          var dayofYear = dayofYear+10;
+          dayofYear = dayofYear+10;
       }
       $('#lock').addClass('active')
     }
@@ -50,18 +47,7 @@ $(document).on('ready', function() {
     }, 200);
 });
 
-function workDays(dayofYear) {
-    days.eq(dayofYear).addClass("ochtend").attr({"title": "Ochtenddienst"});
-    days.eq(dayofYear+1).addClass("ochtend").attr({"title": "Ochtenddienst"});
-    days.eq(dayofYear+2).addClass("avond").attr({"title": "Avonddienst"});
-    days.eq(dayofYear+3).addClass("avond").attr({"title": "Avonddienst"});
-    days.eq(dayofYear+4).addClass("nacht").attr({"title": "Nachtdienst"});
-    days.eq(dayofYear+5).addClass("nacht").attr({"title": "Nachtdienst"});
-    days.eq(dayofYear+6).removeClass;
-    days.eq(dayofYear+7).removeClass;
-    days.eq(dayofYear+8).removeClass;
-    days.eq(dayofYear+9).removeClass;
-}
+
 
 
 var locked = localStorage.getItem("locked")
@@ -152,3 +138,17 @@ $("#unlock").click(function(){
     localStorage.setItem("locked", false);
 });
 });
+
+
+function workDays(dayofYear) {
+    days.eq(dayofYear).addClass("ochtend").attr({"title": "Ochtenddienst"});
+    days.eq(dayofYear+1).addClass("ochtend").attr({"title": "Ochtenddienst"});
+    days.eq(dayofYear+2).addClass("avond").attr({"title": "Avonddienst"});
+    days.eq(dayofYear+3).addClass("avond").attr({"title": "Avonddienst"});
+    days.eq(dayofYear+4).addClass("nacht").attr({"title": "Nachtdienst"});
+    days.eq(dayofYear+5).addClass("nacht").attr({"title": "Nachtdienst"});
+    days.eq(dayofYear+6).removeClass;
+    days.eq(dayofYear+7).removeClass;
+    days.eq(dayofYear+8).removeClass;
+    days.eq(dayofYear+9).removeClass;
+}
