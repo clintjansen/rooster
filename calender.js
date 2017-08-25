@@ -122,23 +122,25 @@ $("#lock").click(function(){
     localStorage.setItem("locked", true);
 });
 
-$("#unlock").click(function(){
-    $('#lock').removeClass('active');
-    days.on('click.rooster', function () {
-    var dayofYear = days.index($(this));
-    days.not(".feestdag").not(".hidden").removeClass();
-    while (dayofYear >= 10) { 
-            var dayofYear = dayofYear-10;
-            workDays(dayofYear);
-    }
-    while (dayofYear <= 5000) {
-        workDays(dayofYear);
-        var dayofYear = dayofYear+10;
-    }
-    localStorage.setItem("locked", false);
-});
-});
 
+$('#unlock').click(function() {
+    $('#lock').removeClass('active')
+    days.on('click.rooster', function() {
+        var dayofYear = days.index($(this))
+        var realDay = dayofYear-20;
+        localStorage.setItem('roosterKlik', realDay)
+        days.not('.feestdag').not('.hidden').removeClass()
+        while (dayofYear >= 10) {
+            var dayofYear = dayofYear - 10
+            workDays(dayofYear)
+        }
+        while (dayofYear <= 5000) {
+            workDays(dayofYear)
+            var dayofYear = dayofYear + 10
+        }
+        localStorage.setItem('locked', false)
+    })
+})
 
 function workDays(dayofYear) {
     days.eq(dayofYear).addClass("ochtend").attr({"title": "Ochtenddienst"});
