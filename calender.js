@@ -42,7 +42,7 @@ $(document).on('ready', function() {
     // Jumps to current Month of the year
     var currentMonth = '#' + month + '-' + d.getFullYear()
 
-    if (!dayofYear) {
+    if (dayofYear) {
        $('html, body').animate({ scrollTop: $(currentMonth).offset().top }, 200) 
     }
 });
