@@ -14,7 +14,6 @@
 
 var days = $("td:not(:empty):not(.wknr)");
 var d = new Date();
-
 var month = d.getMonth()+1;
 var day = d.getDate();
 
@@ -22,9 +21,10 @@ var output = d.getFullYear() + '/' +
     ((''+month).length<2 ? '0' : '') + month + '/' +
     ((''+day).length<2 ? '0' : '') + day;
 
+var locked = localStorage.getItem("locked")
+
 
 $(document).on('ready', function() {
-
     var dayofYear = localStorage.getItem("roosterKlik"); // get last clicked day
     //console.log(dayofYear);
     if (dayofYear !== null) {
@@ -42,15 +42,15 @@ $(document).on('ready', function() {
     // Jumps to current Month of the year
     var currentMonth = '#' + month + '-' + d.getFullYear()
 
-    $('html, body').animate({
-        scrollTop: $(currentMonth).offset().top
-    }, 200);
+    if (!dayofYear) {
+       $('html, body').animate({ scrollTop: $(currentMonth).offset().top }, 200) 
+    }
 });
 
 
 
 
-var locked = localStorage.getItem("locked")
+
 if (!locked) {
     days.on('click.rooster', function() {
     var dayofYear = days.index($(this));
