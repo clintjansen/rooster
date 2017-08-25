@@ -18,75 +18,23 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-      <script src="js/js.cookie.js"></script>
+    <!-- <script src="js/js.cookie.js"></script> -->
+      <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
   </head>
   <body>
 <!-- find: (>)\n?\s*([\w\s]*)\s(<) -->
 <!-- replace: \1\2\3 -->
 <div class="page-header">
-    <h1>Rooster hulp <small> rooster vooruitzicht, klik je eerste werkdag van een week aan.</small></h1>
+    <h1>Rooster hulp, <small>klik de eerste werkdag van een week aan.</small></h1>
     <div class="text-center">
     <div class="btn-group" role="group">
         <button type="button" id="lock" class="btn btn-default">Lock</button>
         <button type="button" id="unlock" class="btn btn-default">Unlock</button>
     </div>
+    <h5>Zet "Lock" aan zodat je niet perongeluk je rooster verplaatst met klikken.</h5>
     </div>
 </div>
 
-<!-- START CONTAINER 2015 -->
-<div class="container">
-  <div class="row">
-    <div class="col-md-3"><h4 class="text-center"><b>januari</b></h4><table id="calendar" class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tbody><tr><td class="hidden">overflow</td><td class="hidden">overflow</td><td class="hidden">overflow</td><td class="hidden">overflow</td><td class="hidden">overflow</td><td class="hidden">overflow</td><td class="hidden">overflow</td></tr><tr><td class="hidden">overflow</td><td class="hidden">overflow</td><td class="hidden">overflow</td><td class="hidden">overflow</td><td class="hidden">overflow</td><td class="hidden">overflow</td><td class="hidden">overflow</td></tr><tr><td class="hidden">overflow</td><td class="hidden">overflow</td><td class="hidden">overflow</td><td class="hidden">overflow</td><td class="hidden">overflow</td><td class="hidden">overflow</td><td class="hidden">overflow</td></tr><tr><td></td><td></td><td></td><td>1</td><td>2</td><td>3</td><td>4</td></tr><tr><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td></tr><tr><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td></tr><tr><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td></tr><tr><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td><td></td></tr></tbody></table></div>
-    <div class="col-md-3"><h4 class="text-center"><b>februari</b></h4><table class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tbody><tr><td></td><td></td><td></td><td></td><td></td><td></td><td>1</td></tr><tr><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td></tr><tr><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td></tr><tr><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td></tr><tr><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td></td></tr></tbody></table></div>
-    <div class="col-md-3"><h4 class="text-center"><b>maart</b></h4><table class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tbody><tr><td></td><td></td><td></td><td></td><td></td><td></td><td>1</td></tr><tr><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td></tr><tr><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td></tr><tr><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td></tr><tr><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td></tr><tr><td>30</td><td>31</td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table></div>
-    <div class="col-md-3"><h4 class="text-center"><b>april</b></h4><table class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tbody><tr><td></td><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr><tr><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td></tr><tr><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td></tr><tr><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td></tr><tr><td>27</td><td>28</td><td>29</td><td>30</td><td></td><td></td><td></td></tr></tbody></table></div>
-      <div class="clearfix"></div>
-    <div class="col-md-3"><h4 class="text-center"><b>mei</b></h4><table class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tbody><tr><td></td><td></td><td></td><td></td><td>1</td><td>2</td><td>3</td></tr><tr><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr><tr><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td></tr><tr><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td></tr><tr><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td></tr></tbody></table></div>
-    <div class="col-md-3"><h4 class="text-center"><b>juni</b></h4><table class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tbody><tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr><tr><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr><tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr><tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr><tr><td>29</td><td>30</td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table></div>
-    <div class="col-md-3"><h4 class="text-center"><b>juli</b></h4><table class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tbody><tr><td></td><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr><tr><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td></tr><tr><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td></tr><tr><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td></tr><tr><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td><td></td><td></td></tr></tbody></table></div>
-    <div class="col-md-3"><h4 class="text-center"><b>augustus</b></h4><table class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tbody><tr><td></td><td></td><td></td><td></td><td></td><td>1</td><td>2</td></tr><tr><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td></tr><tr><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td></tr><tr><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td></tr><tr><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td></tr><tr><td>31</td><td></td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table></div>
-      <div class="clearfix"></div>
-    <div class="col-md-3"><h4 class="text-center"><b>september</b></h4><table class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tbody><tr><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr><tr><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td></tr><tr><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td></tr><tr><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td></tr><tr><td>28</td><td>29</td><td>30</td><td></td><td></td><td></td><td></td></tr></tbody></table></div>
-    <div class="col-md-3"><h4 class="text-center"><b>oktober</b></h4><table class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tbody><tr><td></td><td></td><td></td><td>1</td><td>2</td><td>3</td><td>4</td></tr><tr><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td></tr><tr><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td></tr><tr><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td></tr><tr><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td><td></td></tr></tbody></table></div>
-    <div class="col-md-3"><h4 class="text-center"><b>november</b></h4><table class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tbody><tr><td></td><td></td><td></td><td></td><td></td><td></td><td>1</td></tr><tr><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td></tr><tr><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td></tr><tr><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td></tr><tr><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td></tr><tr><td>30</td><td></td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table></div>
-    <div class="col-md-3"><h4 class="text-center"><b>december</b></h4><table class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tbody><tr><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr><tr><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td></tr><tr><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td></tr><tr><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td></tr><tr><td>28</td><td>29</td><td>30</td><td>31</td><td></td><td></td><td></td></tr></tbody></table></div>
-      <div class="clearfix"></div>
-  </div>
-  <div class="row">
-      <div class="col-md-6"></div>
-      <div class="col-md-6"></div>
-  </div>
-</div>
-<!-- END CONTAINER 2015 -->
-
-<div class="page-header text-center">
-    <h1>2016</h1>
-</div>
-<!-- START 2016 -->
-<div class="container">
-  <div class="row">
-    <div id="1-2016" class="col-md-3"><h4 class="text-center"><b>januari 2016</b></h4><table class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tr><td colspan="4"></td><td>1</td><td>2</td><td>3</td></tr><tr><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr><tr><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td></tr><tr><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td></tr><tr><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td></tr><tr><td colspan="7"></td></tr></table></div>
-    <div id="2-2016" class="col-md-3"><h4 class="text-center"><b>februari 2016</b></h4><table class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr><tr><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr><tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr><tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr><tr><td>29</td><td colspan="6"></td></tr></table></div>
-    <div id="3-2016" class="col-md-3"><h4 class="text-center"><b>maart 2016</b></h4><table class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tr><td colspan="1"></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr><tr><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td></tr><tr><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td></tr><tr><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td></tr><tr><td>28</td><td>29</td><td>30</td><td>31</td><td colspan="3"></td></tr></table></div>
-    <div id="4-2016" class="col-md-3"><h4 class="text-center"><b>april 2016</b></h4><table class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tr><td colspan="4"></td><td>1</td><td>2</td><td>3</td></tr><tr><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr><tr><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td></tr><tr><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td></tr><tr><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td colspan="1"></td></tr></table></div>
-      <div class="clearfix"></div>
-    <div id="5-2016" class="col-md-3"><h4 class="text-center"><b>mei 2016</b></h4><table class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tr><td colspan="6"></td><td>1</td></tr><tr><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td></tr><tr><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td></tr><tr><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td></tr><tr><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td></tr><tr><td>30</td><td>31</td><td colspan="5"></td></tr></table></div>
-    <div id="6-2016" class="col-md-3"><h4 class="text-center"><b>juni 2016</b></h4><table class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tr><td colspan="2"></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr><tr><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td></tr><tr><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td></tr><tr><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td></tr><tr><td>27</td><td>28</td><td>29</td><td>30</td><td colspan="3"></td></tr></table></div>
-    <div id="7-2016" class="col-md-3"><h4 class="text-center"><b>juli 2016</b></h4><table class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tr><td colspan="4"></td><td>1</td><td>2</td><td>3</td></tr><tr><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr><tr><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td></tr><tr><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td></tr><tr><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td></tr></table></div>
-    <div id="8-2016" class="col-md-3"><h4 class="text-center"><b>augustus 2016</b></h4><table class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tr><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td></tr><tr><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td></tr><tr><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td></tr><tr><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td></tr><tr><td>29</td><td>30</td><td>31</td><td colspan="4"></td></tr></table></div>
-      <div class="clearfix"></div>
-    <div id="9-2016" class="col-md-3"><h4 class="text-center"><b>september 2016</b></h4><table class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tr><td colspan="3"></td><td>1</td><td>2</td><td>3</td><td>4</td></tr><tr><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td></tr><tr><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td></tr><tr><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td></tr><tr><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td colspan="2"></td></tr></table></div>
-    <div id="10-2016" class="col-md-3"><h4 class="text-center"><b>oktober 2016</b></h4><table class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tr><td colspan="5"></td><td>1</td><td>2</td></tr><tr><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td></tr><tr><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td></tr><tr><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td></tr><tr><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td></tr><tr><td>31</td><td colspan="6"></td></tr></table></div>
-    <div id="11-2016" class="col-md-3"><h4 class="text-center"><b>november 2016</b></h4><table class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tr><td colspan="1"></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td></tr><tr><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td></tr><tr><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td></tr><tr><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td></tr><tr><td>28</td><td>29</td><td>30</td><td colspan="4"></td></tr></table></div>
-    <div id="12-2016" class="col-md-3"><h4 class="text-center"><b>december 2016</b></h4><table class="table table-condensed"><thead><tr><th>ma</th><th>di</th><th>wo</th><th>do</th><th>vr</th><th>za</th><th>zo</th></tr></thead><tr><td colspan="3"></td><td>1</td><td>2</td><td>3</td><td>4</td></tr><tr><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td></tr><tr><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td></tr><tr><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td></tr><tr><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td><td colspan="1"></td></tr></table></div>
-      <div class="clearfix"></div>
-  </div>
-  <div class="row">
-      <div class="col-md-6"></div>
-      <div class="col-md-6"></div>
-  </div>
-</div>
-<!-- END CONTAINER 2016 -->
 
 <div class="page-header text-center">
     <h1>2017</h1>
@@ -117,157 +65,871 @@
 </div>
 <!-- END CONTAINER 2017 -->
 
+
+<div class="page-header text-center">
+    <h1>2018</h1>
+</div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4"><h4 class="text-center"><b>januari&nbsp;2018</b></h4>
+        <table class="table table-condensed">
+                <thead><tr>
+                    <th class="wknr" title="weeknummer">nr</th>
+                    <th abbr="maandag" title="maandag">ma</th>
+                    <th abbr="dinsdag" title="dinsdag">di</th>
+                    <th abbr="woensdag" title="woensdag">wo</th>
+                    <th abbr="donderdag" title="donderdag">do</th>
+                    <th abbr="vrijdag" title="vrijdag">vr</th>
+                    <th abbr="zaterdag" title="zaterdag">za</th>
+                    <th abbr="zondag" title="zondag">zo</th>
+                </tr></thead>
+                <tr>
+                    <td class="wknr" title="weeknummer 1">1</td>
+                    <td class="vak">1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td class="wd_5">6</td>
+                    <td class="wd_6">7</td>
+                </tr>
+                <tr>
+                    <td class="wknr" title="weeknummer 2">2</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td class="wd_5">13</td>
+                    <td class="wd_6">14</td>
+                </tr>
+                <tr>
+                    <td class="wknr" title="weeknummer 3">3</td>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td class="wd_5">20</td>
+                    <td class="wd_6">21</td>
+                </tr>
+                <tr>
+                    <td class="wknr" title="weeknummer 4">4</td>
+                    <td>22</td>
+                    <td>23</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td class="wd_5">27</td>
+                    <td class="wd_6">28</td>
+                </tr>
+                <tr>
+                    <td class="wknr" title="weeknummer 5">5</td>
+                    <td>29</td>
+                    <td>30</td>
+                    <td>31</td>
+                    <td colspan="4" class="emptycells"></td>
+                </tr>
+        </table>
+      </div>
+      <div class="col-md-4"><h4 class="text-center"><b>februari&nbsp;2018</b></h4>
+        <table class="table table-condensed">
+                <thead><tr>
+                    <th class="wknr" title="weeknummer">nr</th>
+                    <th abbr="maandag" title="maandag">ma</th>
+                    <th abbr="dinsdag" title="dinsdag">di</th>
+                    <th abbr="woensdag" title="woensdag">wo</th>
+                    <th abbr="donderdag" title="donderdag">do</th>
+                    <th abbr="vrijdag" title="vrijdag">vr</th>
+                    <th abbr="zaterdag" title="zaterdag">za</th>
+                    <th abbr="zondag" title="zondag">zo</th>
+                </tr></thead>
+                <tr>
+                    <td class="wknr" title="weeknummer 5">5</td>
+                    <td colspan="3" class="emptycells"></td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td class="wd_5">3</td>
+                    <td class="wd_6">4</td>
+                </tr>
+                <tr>
+                    <td class="wknr" title="weeknummer 6">6</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td class="wd_5">10</td>
+                    <td class="wd_6">11</td>
+                </tr>
+                <tr>
+                    <td class="wknr" title="weeknummer 7">7</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                    <td class="wd_5">17</td>
+                    <td class="wd_6">18</td>
+                </tr>
+                <tr>
+                    <td class="wknr" title="weeknummer 8">8</td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>23</td>
+                    <td class="wd_5">24</td>
+                    <td class="wd_6">25</td>
+                </tr>
+                <tr>
+                    <td class="wknr" title="weeknummer 9">9</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td colspan="4" class="emptycells"></td>
+                </tr>
+        </table>
+      </div>
+      <div class="col-md-4"><h4 class="text-center"><b>maart&nbsp;2018</b></h4>
+        <table class="table table-condensed">
+                <thead><tr>
+                    <th class="wknr" title="weeknummer">nr</th>
+                    <th abbr="maandag" title="maandag">ma</th>
+                    <th abbr="dinsdag" title="dinsdag">di</th>
+                    <th abbr="woensdag" title="woensdag">wo</th>
+                    <th abbr="donderdag" title="donderdag">do</th>
+                    <th abbr="vrijdag" title="vrijdag">vr</th>
+                    <th abbr="zaterdag" title="zaterdag">za</th>
+                    <th abbr="zondag" title="zondag">zo</th>
+                </tr></thead>
+                <tr>
+                    <td class="wknr" title="weeknummer 9">9</td>
+                    <td colspan="3" class="emptycells"></td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td class="wd_5">3</td>
+                    <td class="wd_6">4</td>
+                </tr>
+                <tr>
+                    <td class="wknr" title="weeknummer 10">10</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td class="wd_5">10</td>
+                    <td class="wd_6">11</td>
+                </tr>
+                <tr>
+                    <td class="wknr" title="weeknummer 11">11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                    <td class="wd_5">17</td>
+                    <td class="wd_6">18</td>
+                </tr>
+                <tr>
+                    <td class="wknr" title="weeknummer 12">12</td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>23</td>
+                    <td class="wd_5">24</td>
+                    <td class="wd_6">25</td>
+                </tr>
+                <tr>
+                    <td class="wknr" title="weeknummer 13">13</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                    <td class="wd_5">31</td>
+                    <td colspan="1" class="emptycells"></td>
+                </tr>
+        </table>
+      </div>
+      <div class="clearfix"></div>
+      <div class="col-md-4"><h4 class="text-center"><b>april&nbsp;2018</b></h4>
+        <table class="table table-condensed">
+                <thead><tr>
+                    <th class="wknr" title="weeknummer">nr</th>
+                    <th abbr="maandag" title="maandag">ma</th>
+                    <th abbr="dinsdag" title="dinsdag">di</th>
+                    <th abbr="woensdag" title="woensdag">wo</th>
+                    <th abbr="donderdag" title="donderdag">do</th>
+                    <th abbr="vrijdag" title="vrijdag">vr</th>
+                    <th abbr="zaterdag" title="zaterdag">za</th>
+                    <th abbr="zondag" title="zondag">zo</th>
+                </tr></thead>
+                <tr>
+                    <td class="wknr" title="weeknummer 13">13</td>
+                    <td colspan="6" class="emptycells"></td>
+                    <td class="wd_6 vak">1</a></td>
+                </tr>
+                <tr>
+                    <td class="wknr" title="weeknummer 14">14</td>
+                    <td class="vak">2</a></td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td class="wd_5">7</td>
+                    <td class="wd_6">8</td>
+                </tr>
+                <tr>
+                    <td class="wknr" title="weeknummer 15">15</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td class="wd_5">14</td>
+                    <td class="wd_6">15</td>
+                </tr>
+                <tr>
+                    <td class="wknr" title="weeknummer 16">16</td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td class="wd_5">21</td>
+                    <td class="wd_6">22</td>
+                </tr>
+                <tr>
+                    <td class="wknr" title="weeknummer 17">17</td>
+                    <td>23</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td class="vak"></td>
+                    <td class="wd_5">28</td>
+                    <td class="wd_6">29</td>
+                </tr>
+                <tr>
+                    <td class="wknr" title="weeknummer 18">18</td>
+                    <td>30</td>
+                    <td colspan="6" class="emptycells"></td>
+                </tr>
+        </table>
+      </div>
+      <div class="col-md-4"><h4 class="text-center"><b>mei&nbsp;2018</b></h4>
+        <table class="table table-condensed">
+                <thead><tr>
+                    <th class="wknr" title="weeknummer">nr</th>
+                    <th abbr="maandag" title="maandag">ma</th>
+                    <th abbr="dinsdag" title="dinsdag">di</th>
+                    <th abbr="woensdag" title="woensdag">wo</th>
+                    <th abbr="donderdag" title="donderdag">do</th>
+                    <th abbr="vrijdag" title="vrijdag">vr</th>
+                    <th abbr="zaterdag" title="zaterdag">za</th>
+                    <th abbr="zondag" title="zondag">zo</th>
+                </tr></thead>
+                <tr>
+                    <td class="wknr" title="weeknummer 18">18</td>
+                    <td colspan="1" class="emptycells"></td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td class="wd_5 vak"></td>
+                    <td class="wd_6">6</td>
+                </tr>
+                <tr>
+                    <td class="wknr" title="weeknummer 19">19</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td class="vak"></td>
+                    <td>11</td>
+                    <td class="wd_5">12</td>
+                    <td class="wd_6">13</td>
+                </tr>
+                <tr>
+                    <td class="wknr" title="weeknummer 20">20</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                    <td class="wd_5">19</td>
+                    <td class="wd_6 vak">20</a></td>
+                </tr>
+                <tr>
+                    <td class="wknr" title="weeknummer 21">21</td>
+                    <td class="vak">21</a></td>
+                    <td>22</td>
+                    <td>23</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td class="wd_5">26</td>
+                    <td class="wd_6">27</td>
+                </tr>
+                <tr>
+                    <td class="wknr" title="weeknummer 22">22</td>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                    <td>31</td>
+                    <td colspan="3" class="emptycells"></td>
+                </tr>
+        </table>
+      </div>
+      <div class="col-md-4"><h4 class="text-center"><b>juni&nbsp;2018</b></h4>
+        <table class="table table-condensed">
+                <thead><tr>
+                    <th class="wknr" title="weeknummer">nr</th>
+                    <th abbr="maandag" title="maandag">ma</th>
+                    <th abbr="dinsdag" title="dinsdag">di</th>
+                    <th abbr="woensdag" title="woensdag">wo</th>
+                    <th abbr="donderdag" title="donderdag">do</th>
+                    <th abbr="vrijdag" title="vrijdag">vr</th>
+                    <th abbr="zaterdag" title="zaterdag">za</th>
+                    <th abbr="zondag" title="zondag">zo</th>
+                </tr></thead>
+                <tr>
+                    <td class="wknr" title="weeknummer 22">22</td>
+                    <td colspan="4" class="emptycells"></td>
+                    <td>1</td>
+                    <td class="wd_5">2</td>
+                    <td class="wd_6">3</td>
+                </tr>
+                <tr>
+                    <td class="wknr" title="weeknummer 23">23</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td class="wd_5">9</td>
+                    <td class="wd_6">10</td>
+                </tr>
+                <tr>
+                    <td class="wknr" title="weeknummer 24">24</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td class="wd_5">16</td>
+                    <td class="wd_6">17</td>
+                </tr>
+                <tr>
+                    <td class="wknr" title="weeknummer 25">25</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>22</td>
+                    <td class="wd_5">23</td>
+                    <td class="wd_6">24</td>
+                </tr>
+                <tr>
+                    <td class="wknr" title="weeknummer 26">26</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>29</td>
+                    <td class="wd_5">30</td>
+                    <td colspan="1" class="emptycells"></td>
+                </tr>
+        </table>
+      </div>
+      <div class="clearfix"></div>
+      <div class="col-md-4"><h4 class="text-center"><b>juli&nbsp;2018</b></h4>
+        <table class="table table-condensed">
+                <thead><tr>
+                    <th class="wknr" title="weeknummer">nr</th>
+                    <th abbr="maandag" title="maandag">ma</th>
+                    <th abbr="dinsdag" title="dinsdag">di</th>
+                    <th abbr="woensdag" title="woensdag">wo</th>
+                    <th abbr="donderdag" title="donderdag">do</th>
+                    <th abbr="vrijdag" title="vrijdag">vr</th>
+                    <th abbr="zaterdag" title="zaterdag">za</th>
+                    <th abbr="zondag" title="zondag">zo</th>
+                </tr></thead>
+                <tr>
+                    <td class="wknr" title="weeknummer 26">26</td>
+                    <td colspan="6" class="emptycells"></td>
+                    <td class="wd_6">1</td>
+                </tr>
+                <tr>
+                    <td class="wknr" title="weeknummer 27">27</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td class="wd_5">7</td>
+                    <td class="wd_6">8</td>
+                </tr>
+                <tr>
+                    <td class="wknr" title="weeknummer 28">28</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td class="wd_5">14</td>
+                    <td class="wd_6">15</td>
+                </tr>
+                <tr>
+                    <td class="wknr" title="weeknummer 29">29</td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td class="wd_5">21</td>
+                    <td class="wd_6">22</td>
+                </tr>
+                <tr>
+                    <td class="wknr" title="weeknummer 30">30</td>
+                    <td>23</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td class="wd_5">28</td>
+                    <td class="wd_6">29</td>
+                </tr>
+                <tr>
+                    <td class="wknr" title="weeknummer 31">31</td>
+                    <td>30</td>
+                    <td>31</td>
+                    <td colspan="5" class="emptycells"></td>
+                </tr>
+        </table>
+      </div>
+      <div class="col-md-4"><h4 class="text-center"><b>augustus&nbsp;2018</b></h4>
+        <table class="table table-condensed">
+                <thead><tr>
+                    <th class="wknr" title="weeknummer">nr</th>
+                    <th abbr="maandag" title="maandag">ma</th>
+                    <th abbr="dinsdag" title="dinsdag">di</th>
+                    <th abbr="woensdag" title="woensdag">wo</th>
+                    <th abbr="donderdag" title="donderdag">do</th>
+                    <th abbr="vrijdag" title="vrijdag">vr</th>
+                    <th abbr="zaterdag" title="zaterdag">za</th>
+                    <th abbr="zondag" title="zondag">zo</th>
+                </tr></thead>
+                <tr>
+                    <td class="wknr" title="weeknummer 31">31</td>
+                    <td colspan="2" class="emptycells"></td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td class="wd_5">4</td>
+                    <td class="wd_6">5</td>
+                </tr>
+                <tr>
+                    <td class="wknr" title="weeknummer 32">32</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td class="wd_5">11</td>
+                    <td class="wd_6">12</td>
+                </tr>
+                <tr>
+                    <td class="wknr" title="weeknummer 33">33</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td class="wd_5">18</td>
+                    <td class="wd_6">19</td>
+                </tr>
+                <tr>
+                    <td class="wknr" title="weeknummer 34">34</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>23</td>
+                    <td>24</td>
+                    <td class="wd_5">25</td>
+                    <td class="wd_6">26</td>
+                </tr>
+                <tr>
+                    <td class="wknr" title="weeknummer 35">35</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                    <td>31</td>
+                    <td colspan="2" class="emptycells"></td>
+                </tr>
+        </table>
+      </div>
+    <div class="text-center" id="dish-top-mobile"></div>
+      <div class="col-md-4"><h4 class="text-center"><b>september&nbsp;2018</b></h4>
+        <table class="table table-condensed">
+                <thead><tr>
+                    <th class="wknr" title="weeknummer">nr</th>
+                    <th abbr="maandag" title="maandag">ma</th>
+                    <th abbr="dinsdag" title="dinsdag">di</th>
+                    <th abbr="woensdag" title="woensdag">wo</th>
+                    <th abbr="donderdag" title="donderdag">do</th>
+                    <th abbr="vrijdag" title="vrijdag">vr</th>
+                    <th abbr="zaterdag" title="zaterdag">za</th>
+                    <th abbr="zondag" title="zondag">zo</th>
+                </tr></thead>
+                <tr>
+                    <td class="wknr" title="weeknummer 35">35</td>
+                    <td colspan="5" class="emptycells"></td>
+                    <td class="wd_5">1</td>
+                    <td class="wd_6">2</td>
+                </tr>
+                <tr>
+                    <td class="wknr" title="weeknummer 36">36</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td class="wd_5">8</td>
+                    <td class="wd_6">9</td>
+                </tr>
+                <tr>
+                    <td class="wknr" title="weeknummer 37">37</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td class="wd_5">15</td>
+                    <td class="wd_6">16</td>
+                </tr>
+                <tr>
+                    <td class="wknr" title="weeknummer 38">38</td>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td class="wd_5">22</td>
+                    <td class="wd_6">23</td>
+                </tr>
+                <tr>
+                    <td class="wknr" title="weeknummer 39">39</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td class="wd_5">29</td>
+                    <td class="wd_6">30</td>
+                </tr>
+        </table>
+      </div>
+      <div class="clearfix"></div>
+      <div class="col-md-4"><h4 class="text-center"><b>oktober&nbsp;2018</b></h4>
+        <table class="table table-condensed">
+                <thead><tr>
+                    <th class="wknr" title="weeknummer">nr</th>
+                    <th abbr="maandag" title="maandag">ma</th>
+                    <th abbr="dinsdag" title="dinsdag">di</th>
+                    <th abbr="woensdag" title="woensdag">wo</th>
+                    <th abbr="donderdag" title="donderdag">do</th>
+                    <th abbr="vrijdag" title="vrijdag">vr</th>
+                    <th abbr="zaterdag" title="zaterdag">za</th>
+                    <th abbr="zondag" title="zondag">zo</th>
+                </tr></thead>
+                <tr>
+                    <td class="wknr" title="weeknummer 40">40</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td class="wd_5">6</td>
+                    <td class="wd_6">7</td>
+                </tr>
+                <tr>
+                    <td class="wknr" title="weeknummer 41">41</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td class="wd_5">13</td>
+                    <td class="wd_6">14</td>
+                </tr>
+                <tr>
+                    <td class="wknr" title="weeknummer 42">42</td>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td class="wd_5">20</td>
+                    <td class="wd_6">21</td>
+                </tr>
+                <tr>
+                    <td class="wknr" title="weeknummer 43">43</td>
+                    <td>22</td>
+                    <td>23</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td class="wd_5">27</td>
+                    <td class="wd_6">28</td>
+                </tr>
+                <tr>
+                    <td class="wknr" title="weeknummer 44">44</td>
+                    <td>29</td>
+                    <td>30</td>
+                    <td>31</td>
+                    <td colspan="4" class="emptycells"></td>
+                </tr>
+        </table>
+      </div>
+      <div class="col-md-4"><h4 class="text-center"><b>november&nbsp;2018</b></h4>
+        <table class="table table-condensed">
+                <thead><tr>
+                    <th class="wknr" title="weeknummer">nr</th>
+                    <th abbr="maandag" title="maandag">ma</th>
+                    <th abbr="dinsdag" title="dinsdag">di</th>
+                    <th abbr="woensdag" title="woensdag">wo</th>
+                    <th abbr="donderdag" title="donderdag">do</th>
+                    <th abbr="vrijdag" title="vrijdag">vr</th>
+                    <th abbr="zaterdag" title="zaterdag">za</th>
+                    <th abbr="zondag" title="zondag">zo</th>
+                </tr></thead>
+                <tr>
+                    <td class="wknr" title="weeknummer 44">44</td>
+                    <td colspan="3" class="emptycells"></td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td class="wd_5">3</td>
+                    <td class="wd_6">4</td>
+                </tr>
+                <tr>
+                    <td class="wknr" title="weeknummer 45">45</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td class="wd_5">10</td>
+                    <td class="wd_6">11</td>
+                </tr>
+                <tr>
+                    <td class="wknr" title="weeknummer 46">46</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                    <td class="wd_5">17</td>
+                    <td class="wd_6">18</td>
+                </tr>
+                <tr>
+                    <td class="wknr" title="weeknummer 47">47</td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>23</td>
+                    <td class="wd_5">24</td>
+                    <td class="wd_6">25</td>
+                </tr>
+                <tr>
+                    <td class="wknr" title="weeknummer 48">48</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                    <td colspan="2" class="emptycells"></td>
+                </tr>
+        </table>
+      </div>
+      <div class="col-md-4"><h4 class="text-center"><b>december&nbsp;2018</b></h4>
+        <table class="table table-condensed">
+                <thead><tr>
+                    <th class="wknr" title="weeknummer">nr</th>
+                    <th abbr="maandag" title="maandag">ma</th>
+                    <th abbr="dinsdag" title="dinsdag">di</th>
+                    <th abbr="woensdag" title="woensdag">wo</th>
+                    <th abbr="donderdag" title="donderdag">do</th>
+                    <th abbr="vrijdag" title="vrijdag">vr</th>
+                    <th abbr="zaterdag" title="zaterdag">za</th>
+                    <th abbr="zondag" title="zondag">zo</th>
+                </tr></thead>
+                <tr>
+                    <td class="wknr" title="weeknummer 48">48</td>
+                    <td colspan="5" class="emptycells"></td>
+                    <td class="wd_5">1</td>
+                    <td class="wd_6">2</td>
+                </tr>
+                <tr>
+                    <td class="wknr" title="weeknummer 49">49</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td class="wd_5">8</td>
+                    <td class="wd_6">9</td>
+                </tr>
+                <tr>
+                    <td class="wknr" title="weeknummer 50">50</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td class="wd_5">15</td>
+                    <td class="wd_6">16</td>
+                </tr>
+                <tr>
+                    <td class="wknr" title="weeknummer 51">51</td>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td class="wd_5">22</td>
+                    <td class="wd_6">23</td>
+                </tr>
+                <tr>
+                    <td class="wknr" title="weeknummer 52">52</td>
+                    <td>24</td>
+                    <td class="vak">25</a></td>
+                    <td class="vak">26</a></td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td class="wd_5">29</td>
+                    <td class="wd_6">30</td>
+                </tr>
+                <tr>
+                    <td class="wknr" title="weeknummer 1">1</td>
+                    <td>31</td>
+                    <td colspan="6" class="emptycells"></td>
+                </tr>
+        </table>
+      </div>
+      <div class="clearfix"></div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="clear"></div>
+    <div id="legenda_feestdagen_jaarkalender" style="margin: 50px">
+        <table class="fl" id="legenda_left">
+            <tbody>
+                <tr>
+                    <td style="width:120px;">
+                        <div class="fl legenda_day">1 januari</div>
+                    </td>
+                    <td>
+                        <div class="fl"> nieuwjaarsdag</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:120px;">
+                        <div class="fl legenda_day">1 april</div>
+                    </td>
+                    <td>
+                        <div class="fl"> 1e paasdag</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:120px;">
+                        <div class="fl legenda_day">2 april</div>
+                    </td>
+                    <td>
+                        <div class="fl"> 2e paasdag</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:120px;">
+                        <div class="fl legenda_day">27 april</div>
+                    </td>
+                    <td>
+                        <div class="fl"> koningsdag</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:120px;">
+                        <div class="fl legenda_day">5 mei</div>
+                    </td>
+                    <td>
+                        <div class="fl"> bevrijdingsdag</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="clear hidden-md hidden-lg"></div>
+        <table class="fl" id="legenda_right">
+            <tbody>
+                <tr>
+                    <td style="width:120px;">
+                        <div class="fl legenda_day">10 mei</div>
+                    </td>
+                    <td>
+                        <div class="fl"> hemelvaartsdag</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:120px;">
+                        <div class="fl legenda_day">20 mei</div>
+                    </td>
+                    <td>
+                        <div class="fl"> 1e pinksterdag</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:120px;">
+                        <div class="fl legenda_day">21 mei</div>
+                    </td>
+                    <td>
+                        <div class="fl"> 2e pinksterdag</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:120px;">
+                        <div class="fl legenda_day">25 december</div>
+                    </td>
+                    <td>
+                        <div class="fl"> 1e kerstdag</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:120px;">
+                        <div class="fl legenda_day">26 december</div>
+                    </td>
+                    <td>
+                        <div class="fl"> 2e kerstdag</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+  </div>
+</div>
+
+
+
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script>
-var days = $("td:not(:empty)");
-
-// Store
-
-// Retrieve
-
-
-/*$(document).on('ready', function() {
-    var dayofYear = Cookies.get('roosterClick'); // Retriev cookie where user last clicked
-    while (dayofYear >= 10) { 
-            var dayofYear = dayofYear-10;
-            workDays(dayofYear);
-    }
-    while (dayofYear <= 5000) {
-        workDays(dayofYear);
-        var dayofYear = dayofYear+10;
-    }
-});*/
-
-var d = new Date();
-
-var month = d.getMonth()+1;
-var day = d.getDate();
-
-var output = d.getFullYear() + '/' +
-    ((''+month).length<2 ? '0' : '') + month + '/' +
-    ((''+day).length<2 ? '0' : '') + day;
-
-$(document).on('ready', function() {
-
-    var dayofYear = localStorage.getItem("roosterKlik"); // get last clicked day
-    //console.log(dayofYear);
-    if (dayofYear !== null) {
-      while (dayofYear >= 10) { 
-              var dayofYear = dayofYear-10;
-              workDays(dayofYear);
-      }
-      while (dayofYear <= 5000) {
-          workDays(dayofYear);
-          var dayofYear = dayofYear+10;
-      }
-      $('#lock').addClass('active')
-    }
-
-    // Jumps to current Month of the year
-    var currentMonth = '#' + month + '-' + d.getFullYear()
-
-    $('html, body').animate({
-        scrollTop: $(currentMonth).offset().top
-    }, 200);
-});
-
-function workDays(dayofYear) {
-    days.eq(dayofYear).addClass("ochtend").attr({"title": "Ochtenddienst"});
-    days.eq(dayofYear+1).addClass("ochtend").attr({"title": "Ochtenddienst"});
-    days.eq(dayofYear+2).addClass("avond").attr({"title": "Avonddienst"});
-    days.eq(dayofYear+3).addClass("avond").attr({"title": "Avonddienst"});
-    days.eq(dayofYear+4).addClass("nacht").attr({"title": "Nachtdienst"});
-    days.eq(dayofYear+5).addClass("nacht").attr({"title": "Nachtdienst"});
-    days.eq(dayofYear+6).removeClass;
-    days.eq(dayofYear+7).removeClass;
-    days.eq(dayofYear+8).removeClass;
-    days.eq(dayofYear+9).removeClass;
-}
-
-days.on('click.rooster', function() {
-var dayofYear = days.index($(this));
-var realDay = dayofYear-20; //console.log("dayofYear <td> is: "+ realDay);
-/*Cookies.set('roosterClick', realDay); // Set cookie for the date clicked*/
-localStorage.setItem("roosterKlik", realDay);
-    days.not(".feestdag").not(".hidden").removeClass();
-    while (dayofYear >= 10) { 
-            var dayofYear = dayofYear-10;
-            workDays(dayofYear);
-    }
-    while (dayofYear <= 5000) {
-        workDays(dayofYear);
-        var dayofYear = dayofYear+10;
-    }
-});
-
-// Feestdagen
-days.each(function() {
-    var dag = days.index($(this));
-    var overflow = +20;
-    if (dag == 1+overflow) { // Nieuwjaarsdag 2015
-        $(this).addClass("feestdag").attr({"data-toggle": "tooltip", "data-container": "body", "title": "Nieuwjaarsdag"});
-    } else if (dag == 93+overflow) { // Goede vrijdag 2015
-        $(this).addClass("feestdag").attr({"data-toggle": "tooltip", "data-container": "body", "title": "Goede vrijdag"});
-    } else if (dag == 95+overflow || dag == 96+overflow) { // 1e & 2e Paasdag 2015
-        $(this).addClass("feestdag").attr({"data-toggle": "tooltip", "data-container": "body", "title": "Pasen"});
-    } else if (dag == 117+overflow) { // Koningsdag 2015
-        $(this).addClass("feestdag").attr({"data-toggle": "tooltip", "data-container": "body", "title": "Koningsdag"});
-    } else if (dag == 125+overflow) { // Bevrijdingsdag 2015
-        $(this).addClass("feestdag").attr({"data-toggle": "tooltip", "data-container": "body", "title": "Bevrijdingsdag"});
-    } else if (dag == 134+overflow) { // Hemelvaartsdag 2015
-        $(this).addClass("feestdag").attr({"data-toggle": "tooltip", "data-container": "body", "title": "Hemelvaartsdag"});
-    } else if (dag == 144+overflow || dag == 145+overflow) { // 1e & 2e Pinksterdag 2015
-        $(this).addClass("feestdag").attr({"data-toggle": "tooltip", "data-container": "body", "title": "Pinksteren"});
-    } else if (dag == 359+overflow || dag == 360+overflow) { // 1e & 2e Kerstdag 2015
-        $(this).addClass("feestdag").attr({"data-toggle": "tooltip", "data-container": "body", "title": "Kerst"});
-    } else if (dag == 365+overflow) { // Oudjaarsdag 2015
-        $(this).addClass("feestdag").attr({"data-toggle": "tooltip", "data-container": "body", "title": "Oudjaarsdag"});
-    } else if (dag == 366+overflow) { // Nieuwjaarsdag 2015
-        $(this).addClass("feestdag").attr({"data-toggle": "tooltip", "data-container": "body", "title": "Nieuwjaarsdag"});
-    } else if (dag == 450+overflow) { // Goede vrijdag 2015
-        $(this).addClass("feestdag").attr({"data-toggle": "tooltip", "data-container": "body", "title": "Goede vrijdag"});
-    } else if (dag == 452+overflow || dag == 453+overflow) { // 1e & 2e Paasdag 2015
-        $(this).addClass("feestdag").attr({"data-toggle": "tooltip", "data-container": "body", "title": "Pasen"});
-    } else if (dag == 483+overflow) { // Koningsdag 2015
-        $(this).addClass("feestdag").attr({"data-toggle": "tooltip", "data-container": "body", "title": "Koningsdag"});
-    } else if (dag == 491+overflow) { // Bevrijdingsdag 2015 & Hemelvaartsdag 2015
-        $(this).addClass("feestdag").attr({"data-toggle": "tooltip", "data-container": "body", "title": "Bevrijdingsdag & Hemelvaartsdag"});
-    } else if (dag == 501+overflow || dag == 502+overflow) { // 1e & 2e Pinksterdag 2015
-        $(this).addClass("feestdag").attr({"data-toggle": "tooltip", "data-container": "body", "title": "Pinksteren"});
-    } else if (dag == 725+overflow || dag == 726+overflow) { // 1e & 2e Kerstdag 2015
-        $(this).addClass("feestdag").attr({"data-toggle": "tooltip", "data-container": "body", "title": "Kerst"});
-    } else if (dag == 731+overflow) { // Oudjaarsdag 2015
-        $(this).addClass("feestdag").attr({"data-toggle": "tooltip", "data-container": "body", "title": "Oudjaarsdag"});
-    }
-});
-
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip({ delay: { hide: 200 }, placement: 'bottom' })
-})
-
-// Lock & Unlock roster creation
-$("#lock").click(function(){
-    days.off('click.rooster');
-    $(this).addClass('active');
-    $('#unlock').removeClass('active');
-});
-$("#unlock").click(function(){
-    $('#lock').removeClass('active');
-    days.on('click.rooster', function () {
-    var dayofYear = days.index($(this));
-    days.not(".feestdag").not(".hidden").removeClass();
-    while (dayofYear >= 10) { 
-            var dayofYear = dayofYear-10;
-            workDays(dayofYear);
-    }
-    while (dayofYear <= 5000) {
-        workDays(dayofYear);
-        var dayofYear = dayofYear+10;
-    }
-});
-});
-</script>
+<script src="calender.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
   </body>

@@ -20,6 +20,17 @@ body {
 	margin-top: 0px;
 }
 
+[title="weeknummer"] {
+	color: white;
+}
+
+.wknr:not([title="weeknummer"]) {
+	/*min-width: 24px;*/
+	opacity: 0.5;
+	font-size: 0.7em;
+	line-height: 20px;
+}
+
 .table tbody tr > td:hover {
   background-color: #dff0d8 !important;
 } 
